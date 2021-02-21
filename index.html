@@ -1,0 +1,15 @@
+<html>
+  <script>
+    targetUrl="http://ccsyue.lovestoblog.com"
+    curlUrl=targetUrl
+    curlUrl1="http://www.ccsyue.com"
+    curlUrl2="https://www.ccsyue.com"
+    
+    if(window.location.href.indexOf(curlUrl1) == -1) {
+        curlUrl=curlUrl1
+    }else if(){
+        curlUrl=curlUrl2
+    }
+    window.location.href=window.location.href.replace(curlUrl,targetUrl)
+  </script>
+</html>
