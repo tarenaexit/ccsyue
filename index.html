@@ -5,11 +5,12 @@
     curlUrl1="http://www.ccsyue.com"
     curlUrl2="https://www.ccsyue.com"
     
-    if(window.location.href.indexOf(curlUrl1) == -1) {
+    if(window.location.href.indexOf(curlUrl1) != -1) {
         curlUrl=curlUrl1
-    }else if(window.location.href.indexOf(curlUrl2) == -1){
+    }else if(window.location.href.indexOf(curlUrl2) != -1){
         curlUrl=curlUrl2
     }
+    console.log(curlUrl)
     window.location.href=window.location.href.replace(curlUrl,targetUrl)
   </script>
 </html>
